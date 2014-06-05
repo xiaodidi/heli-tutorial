@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5397E031940550900B53459 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5397E021940550900B53459 /* Foundation.framework */; };
+		D5397E051940550900B53459 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5397E041940550900B53459 /* CoreGraphics.framework */; };
+		D5397E071940550900B53459 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5397E061940550900B53459 /* UIKit.framework */; };
+		D5397E0D1940550900B53459 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5397E0B1940550900B53459 /* InfoPlist.strings */; };
+		D5397E0F1940550900B53459 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5397E0E1940550900B53459 /* main.m */; };
+		D5397E131940550900B53459 /* VTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5397E121940550900B53459 /* VTAppDelegate.m */; };
+		D5397E161940550900B53459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5397E141940550900B53459 /* Main.storyboard */; };
+		D5397E191940550A00B53459 /* VTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5397E181940550A00B53459 /* VTViewController.m */; };
+		D5397E1B1940550A00B53459 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5397E1A1940550A00B53459 /* Images.xcassets */; };
+		D5397E221940550A00B53459 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5397E211940550A00B53459 /* XCTest.framework */; };
+		D5397E231940550A00B53459 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5397E021940550900B53459 /* Foundation.framework */; };
+		D5397E241940550A00B53459 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5397E061940550900B53459 /* UIKit.framework */; };
+		D5397E2C1940550A00B53459 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5397E2A1940550A00B53459 /* InfoPlist.strings */; };
+		D5397E2E1940550A00B53459 /* TestHeli002Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5397E2D1940550A00B53459 /* TestHeli002Tests.m */; };
+		D5397E471940559600B53459 /* Heli29.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E381940559600B53459 /* Heli29.png */; };
+		D5397E481940559600B53459 /* Heli57.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E391940559600B53459 /* Heli57.png */; };
+		D5397E491940559600B53459 /* Heli58.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E3A1940559600B53459 /* Heli58.png */; };
+		D5397E4A1940559600B53459 /* Heli80.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E3B1940559600B53459 /* Heli80.png */; };
+		D5397E4B1940559600B53459 /* Heli114.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E3C1940559600B53459 /* Heli114.png */; };
+		D5397E4C1940559600B53459 /* Heli120.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E3D1940559600B53459 /* Heli120.png */; };
+		D5397E4D1940559600B53459 /* HeliCrash.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E3E1940559600B53459 /* HeliCrash.png */; };
+		D5397E4E1940559600B53459 /* HeliCrash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E3F1940559600B53459 /* HeliCrash@2x.png */; };
+		D5397E4F1940559600B53459 /* HeliDN.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E401940559600B53459 /* HeliDN.png */; };
+		D5397E501940559600B53459 /* HeliDN@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E411940559600B53459 /* HeliDN@2x.png */; };
+		D5397E511940559600B53459 /* HeliUP.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E421940559600B53459 /* HeliUP.png */; };
+		D5397E521940559600B53459 /* HeliUP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E431940559600B53459 /* HeliUP@2x.png */; };
+		D5397E531940559600B53459 /* Obst.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E441940559600B53459 /* Obst.png */; };
+		D5397E541940559600B53459 /* ObstBot.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E451940559600B53459 /* ObstBot.png */; };
+		D5397E551940559600B53459 /* ObstTop.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E461940559600B53459 /* ObstTop.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5397E251940550A00B53459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5397DF71940550900B53459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5397DFE1940550900B53459;
+			remoteInfo = TestHeli002;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5397DFF1940550900B53459 /* TestHeli002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHeli002.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5397E021940550900B53459 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5397E041940550900B53459 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5397E061940550900B53459 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5397E0A1940550900B53459 /* TestHeli002-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestHeli002-Info.plist"; sourceTree = "<group>"; };
+		D5397E0C1940550900B53459 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5397E0E1940550900B53459 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5397E101940550900B53459 /* TestHeli002-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestHeli002-Prefix.pch"; sourceTree = "<group>"; };
+		D5397E111940550900B53459 /* VTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTAppDelegate.h; sourceTree = "<group>"; };
+		D5397E121940550900B53459 /* VTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTAppDelegate.m; sourceTree = "<group>"; };
+		D5397E151940550900B53459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5397E171940550900B53459 /* VTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTViewController.h; sourceTree = "<group>"; };
+		D5397E181940550A00B53459 /* VTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTViewController.m; sourceTree = "<group>"; };
+		D5397E1A1940550A00B53459 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D5397E201940550A00B53459 /* TestHeli002Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHeli002Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5397E211940550A00B53459 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D5397E291940550A00B53459 /* TestHeli002Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestHeli002Tests-Info.plist"; sourceTree = "<group>"; };
+		D5397E2B1940550A00B53459 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5397E2D1940550A00B53459 /* TestHeli002Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHeli002Tests.m; sourceTree = "<group>"; };
+		D5397E381940559600B53459 /* Heli29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heli29.png; sourceTree = "<group>"; };
+		D5397E391940559600B53459 /* Heli57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heli57.png; sourceTree = "<group>"; };
+		D5397E3A1940559600B53459 /* Heli58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heli58.png; sourceTree = "<group>"; };
+		D5397E3B1940559600B53459 /* Heli80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heli80.png; sourceTree = "<group>"; };
+		D5397E3C1940559600B53459 /* Heli114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heli114.png; sourceTree = "<group>"; };
+		D5397E3D1940559600B53459 /* Heli120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heli120.png; sourceTree = "<group>"; };
+		D5397E3E1940559600B53459 /* HeliCrash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliCrash.png; sourceTree = "<group>"; };
+		D5397E3F1940559600B53459 /* HeliCrash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeliCrash@2x.png"; sourceTree = "<group>"; };
+		D5397E401940559600B53459 /* HeliDN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliDN.png; sourceTree = "<group>"; };
+		D5397E411940559600B53459 /* HeliDN@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeliDN@2x.png"; sourceTree = "<group>"; };
+		D5397E421940559600B53459 /* HeliUP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliUP.png; sourceTree = "<group>"; };
+		D5397E431940559600B53459 /* HeliUP@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeliUP@2x.png"; sourceTree = "<group>"; };
+		D5397E441940559600B53459 /* Obst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Obst.png; sourceTree = "<group>"; };
+		D5397E451940559600B53459 /* ObstBot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ObstBot.png; sourceTree = "<group>"; };
+		D5397E461940559600B53459 /* ObstTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ObstTop.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5397DFC1940550900B53459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5397E051940550900B53459 /* CoreGraphics.framework in Frameworks */,
+				D5397E071940550900B53459 /* UIKit.framework in Frameworks */,
+				D5397E031940550900B53459 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5397E1D1940550A00B53459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5397E221940550A00B53459 /* XCTest.framework in Frameworks */,
+				D5397E241940550A00B53459 /* UIKit.framework in Frameworks */,
+				D5397E231940550A00B53459 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5397DF61940550900B53459 = {
+			isa = PBXGroup;
+			children = (
+				D5397E371940555400B53459 /* Resources */,
+				D5397E081940550900B53459 /* TestHeli002 */,
+				D5397E271940550A00B53459 /* TestHeli002Tests */,
+				D5397E011940550900B53459 /* Frameworks */,
+				D5397E001940550900B53459 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5397E001940550900B53459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5397DFF1940550900B53459 /* TestHeli002.app */,
+				D5397E201940550A00B53459 /* TestHeli002Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5397E011940550900B53459 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5397E021940550900B53459 /* Foundation.framework */,
+				D5397E041940550900B53459 /* CoreGraphics.framework */,
+				D5397E061940550900B53459 /* UIKit.framework */,
+				D5397E211940550A00B53459 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5397E081940550900B53459 /* TestHeli002 */ = {
+			isa = PBXGroup;
+			children = (
+				D5397E111940550900B53459 /* VTAppDelegate.h */,
+				D5397E121940550900B53459 /* VTAppDelegate.m */,
+				D5397E141940550900B53459 /* Main.storyboard */,
+				D5397E171940550900B53459 /* VTViewController.h */,
+				D5397E181940550A00B53459 /* VTViewController.m */,
+				D5397E1A1940550A00B53459 /* Images.xcassets */,
+				D5397E091940550900B53459 /* Supporting Files */,
+			);
+			path = TestHeli002;
+			sourceTree = "<group>";
+		};
+		D5397E091940550900B53459 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5397E0A1940550900B53459 /* TestHeli002-Info.plist */,
+				D5397E0B1940550900B53459 /* InfoPlist.strings */,
+				D5397E0E1940550900B53459 /* main.m */,
+				D5397E101940550900B53459 /* TestHeli002-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5397E271940550A00B53459 /* TestHeli002Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D5397E2D1940550A00B53459 /* TestHeli002Tests.m */,
+				D5397E281940550A00B53459 /* Supporting Files */,
+			);
+			path = TestHeli002Tests;
+			sourceTree = "<group>";
+		};
+		D5397E281940550A00B53459 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5397E291940550A00B53459 /* TestHeli002Tests-Info.plist */,
+				D5397E2A1940550A00B53459 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5397E371940555400B53459 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5397E381940559600B53459 /* Heli29.png */,
+				D5397E391940559600B53459 /* Heli57.png */,
+				D5397E3A1940559600B53459 /* Heli58.png */,
+				D5397E3B1940559600B53459 /* Heli80.png */,
+				D5397E3C1940559600B53459 /* Heli114.png */,
+				D5397E3D1940559600B53459 /* Heli120.png */,
+				D5397E3E1940559600B53459 /* HeliCrash.png */,
+				D5397E3F1940559600B53459 /* HeliCrash@2x.png */,
+				D5397E401940559600B53459 /* HeliDN.png */,
+				D5397E411940559600B53459 /* HeliDN@2x.png */,
+				D5397E421940559600B53459 /* HeliUP.png */,
+				D5397E431940559600B53459 /* HeliUP@2x.png */,
+				D5397E441940559600B53459 /* Obst.png */,
+				D5397E451940559600B53459 /* ObstBot.png */,
+				D5397E461940559600B53459 /* ObstTop.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5397DFE1940550900B53459 /* TestHeli002 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5397E311940550A00B53459 /* Build configuration list for PBXNativeTarget "TestHeli002" */;
+			buildPhases = (
+				D5397DFB1940550900B53459 /* Sources */,
+				D5397DFC1940550900B53459 /* Frameworks */,
+				D5397DFD1940550900B53459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestHeli002;
+			productName = TestHeli002;
+			productReference = D5397DFF1940550900B53459 /* TestHeli002.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5397E1F1940550A00B53459 /* TestHeli002Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5397E341940550A00B53459 /* Build configuration list for PBXNativeTarget "TestHeli002Tests" */;
+			buildPhases = (
+				D5397E1C1940550A00B53459 /* Sources */,
+				D5397E1D1940550A00B53459 /* Frameworks */,
+				D5397E1E1940550A00B53459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5397E261940550A00B53459 /* PBXTargetDependency */,
+			);
+			name = TestHeli002Tests;
+			productName = TestHeli002Tests;
+			productReference = D5397E201940550A00B53459 /* TestHeli002Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5397DF71940550900B53459 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = VT;
+				TargetAttributes = {
+					D5397E1F1940550A00B53459 = {
+						TestTargetID = D5397DFE1940550900B53459;
+					};
+				};
+			};
+			buildConfigurationList = D5397DFA1940550900B53459 /* Build configuration list for PBXProject "TestHeli002" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5397DF61940550900B53459;
+			productRefGroup = D5397E001940550900B53459 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5397DFE1940550900B53459 /* TestHeli002 */,
+				D5397E1F1940550A00B53459 /* TestHeli002Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5397DFD1940550900B53459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5397E511940559600B53459 /* HeliUP.png in Resources */,
+				D5397E551940559600B53459 /* ObstTop.png in Resources */,
+				D5397E491940559600B53459 /* Heli58.png in Resources */,
+				D5397E481940559600B53459 /* Heli57.png in Resources */,
+				D5397E531940559600B53459 /* Obst.png in Resources */,
+				D5397E4A1940559600B53459 /* Heli80.png in Resources */,
+				D5397E1B1940550A00B53459 /* Images.xcassets in Resources */,
+				D5397E501940559600B53459 /* HeliDN@2x.png in Resources */,
+				D5397E4E1940559600B53459 /* HeliCrash@2x.png in Resources */,
+				D5397E4F1940559600B53459 /* HeliDN.png in Resources */,
+				D5397E0D1940550900B53459 /* InfoPlist.strings in Resources */,
+				D5397E471940559600B53459 /* Heli29.png in Resources */,
+				D5397E521940559600B53459 /* HeliUP@2x.png in Resources */,
+				D5397E4C1940559600B53459 /* Heli120.png in Resources */,
+				D5397E4B1940559600B53459 /* Heli114.png in Resources */,
+				D5397E161940550900B53459 /* Main.storyboard in Resources */,
+				D5397E541940559600B53459 /* ObstBot.png in Resources */,
+				D5397E4D1940559600B53459 /* HeliCrash.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5397E1E1940550A00B53459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5397E2C1940550A00B53459 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5397DFB1940550900B53459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5397E191940550A00B53459 /* VTViewController.m in Sources */,
+				D5397E131940550900B53459 /* VTAppDelegate.m in Sources */,
+				D5397E0F1940550900B53459 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5397E1C1940550A00B53459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5397E2E1940550A00B53459 /* TestHeli002Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5397E261940550A00B53459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5397DFE1940550900B53459 /* TestHeli002 */;
+			targetProxy = D5397E251940550A00B53459 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5397E0B1940550900B53459 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5397E0C1940550900B53459 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5397E141940550900B53459 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5397E151940550900B53459 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5397E2A1940550A00B53459 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5397E2B1940550A00B53459 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5397E2F1940550A00B53459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D5397E301940550A00B53459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5397E321940550A00B53459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestHeli002/TestHeli002-Prefix.pch";
+				INFOPLIST_FILE = "TestHeli002/TestHeli002-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D5397E331940550A00B53459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestHeli002/TestHeli002-Prefix.pch";
+				INFOPLIST_FILE = "TestHeli002/TestHeli002-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D5397E351940550A00B53459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestHeli002.app/TestHeli002";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestHeli002/TestHeli002-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TestHeli002Tests/TestHeli002Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D5397E361940550A00B53459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestHeli002.app/TestHeli002";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestHeli002/TestHeli002-Prefix.pch";
+				INFOPLIST_FILE = "TestHeli002Tests/TestHeli002Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5397DFA1940550900B53459 /* Build configuration list for PBXProject "TestHeli002" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5397E2F1940550A00B53459 /* Debug */,
+				D5397E301940550A00B53459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5397E311940550A00B53459 /* Build configuration list for PBXNativeTarget "TestHeli002" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5397E321940550A00B53459 /* Debug */,
+				D5397E331940550A00B53459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D5397E341940550A00B53459 /* Build configuration list for PBXNativeTarget "TestHeli002Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5397E351940550A00B53459 /* Debug */,
+				D5397E361940550A00B53459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5397DF71940550900B53459 /* Project object */;
+}
