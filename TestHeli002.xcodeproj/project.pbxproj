@@ -36,6 +36,9 @@
 		D5397E531940559600B53459 /* Obst.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E441940559600B53459 /* Obst.png */; };
 		D5397E541940559600B53459 /* ObstBot.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E451940559600B53459 /* ObstBot.png */; };
 		D5397E551940559600B53459 /* ObstTop.png in Resources */ = {isa = PBXBuildFile; fileRef = D5397E461940559600B53459 /* ObstTop.png */; };
+		D53C12191940A38F000D9234 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D53C12181940A38F000D9234 /* Default~iphone.png */; };
+		D53C121B1940A4BB000D9234 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53C121A1940A4BB000D9234 /* Default@2x.png */; };
+		D53C121D1940A676000D9234 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53C121C1940A676000D9234 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		D5397E441940559600B53459 /* Obst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Obst.png; sourceTree = "<group>"; };
 		D5397E451940559600B53459 /* ObstBot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ObstBot.png; sourceTree = "<group>"; };
 		D5397E461940559600B53459 /* ObstTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ObstTop.png; sourceTree = "<group>"; };
+		D53C12181940A38F000D9234 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		D53C121A1940A4BB000D9234 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D53C121C1940A676000D9234 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,9 @@
 		D5397E371940555400B53459 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D53C121C1940A676000D9234 /* Default-568h@2x.png */,
+				D53C121A1940A4BB000D9234 /* Default@2x.png */,
+				D53C12181940A38F000D9234 /* Default~iphone.png */,
 				D5397E381940559600B53459 /* Heli29.png */,
 				D5397E391940559600B53459 /* Heli57.png */,
 				D5397E3A1940559600B53459 /* Heli58.png */,
@@ -282,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53C121D1940A676000D9234 /* Default-568h@2x.png in Resources */,
 				D5397E511940559600B53459 /* HeliUP.png in Resources */,
 				D5397E551940559600B53459 /* ObstTop.png in Resources */,
 				D5397E491940559600B53459 /* Heli58.png in Resources */,
@@ -289,6 +299,8 @@
 				D5397E531940559600B53459 /* Obst.png in Resources */,
 				D5397E4A1940559600B53459 /* Heli80.png in Resources */,
 				D5397E1B1940550A00B53459 /* Images.xcassets in Resources */,
+				D53C121B1940A4BB000D9234 /* Default@2x.png in Resources */,
+				D53C12191940A38F000D9234 /* Default~iphone.png in Resources */,
 				D5397E501940559600B53459 /* HeliDN@2x.png in Resources */,
 				D5397E4E1940559600B53459 /* HeliCrash@2x.png in Resources */,
 				D5397E4F1940559600B53459 /* HeliDN.png in Resources */,
@@ -444,7 +456,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestHeli002/TestHeli002-Prefix.pch";
 				INFOPLIST_FILE = "TestHeli002/TestHeli002-Info.plist";
@@ -457,7 +468,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestHeli002/TestHeli002-Prefix.pch";
 				INFOPLIST_FILE = "TestHeli002/TestHeli002-Info.plist";
@@ -525,6 +535,7 @@
 				D5397E331940550A00B53459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5397E341940550A00B53459 /* Build configuration list for PBXNativeTarget "TestHeli002Tests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +544,7 @@
 				D5397E361940550A00B53459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
