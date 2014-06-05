@@ -39,6 +39,9 @@
 		D53C12191940A38F000D9234 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D53C12181940A38F000D9234 /* Default~iphone.png */; };
 		D53C121B1940A4BB000D9234 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53C121A1940A4BB000D9234 /* Default@2x.png */; };
 		D53C121D1940A676000D9234 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53C121C1940A676000D9234 /* Default-568h@2x.png */; };
+		D53C121F1940AE61000D9234 /* Helicopter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D53C121E1940AE61000D9234 /* Helicopter.mp3 */; };
+		D53C12211940B85B000D9234 /* Crash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D53C12201940B85B000D9234 /* Crash.mp3 */; };
+		D53C12231940B88E000D9234 /* Clink.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D53C12221940B88E000D9234 /* Clink.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		D53C12181940A38F000D9234 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
 		D53C121A1940A4BB000D9234 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D53C121C1940A676000D9234 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D53C121E1940AE61000D9234 /* Helicopter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Helicopter.mp3; sourceTree = "<group>"; };
+		D53C12201940B85B000D9234 /* Crash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Crash.mp3; sourceTree = "<group>"; };
+		D53C12221940B88E000D9234 /* Clink.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clink.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,9 @@
 		D5397E371940555400B53459 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D53C12221940B88E000D9234 /* Clink.mp3 */,
+				D53C12201940B85B000D9234 /* Crash.mp3 */,
+				D53C121E1940AE61000D9234 /* Helicopter.mp3 */,
 				D53C121C1940A676000D9234 /* Default-568h@2x.png */,
 				D53C121A1940A4BB000D9234 /* Default@2x.png */,
 				D53C12181940A38F000D9234 /* Default~iphone.png */,
@@ -292,10 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53C121D1940A676000D9234 /* Default-568h@2x.png in Resources */,
+				D53C12231940B88E000D9234 /* Clink.mp3 in Resources */,
 				D5397E511940559600B53459 /* HeliUP.png in Resources */,
 				D5397E551940559600B53459 /* ObstTop.png in Resources */,
 				D5397E491940559600B53459 /* Heli58.png in Resources */,
 				D5397E481940559600B53459 /* Heli57.png in Resources */,
+				D53C12211940B85B000D9234 /* Crash.mp3 in Resources */,
 				D5397E531940559600B53459 /* Obst.png in Resources */,
 				D5397E4A1940559600B53459 /* Heli80.png in Resources */,
 				D5397E1B1940550A00B53459 /* Images.xcassets in Resources */,
@@ -310,6 +321,7 @@
 				D5397E4C1940559600B53459 /* Heli120.png in Resources */,
 				D5397E4B1940559600B53459 /* Heli114.png in Resources */,
 				D5397E161940550900B53459 /* Main.storyboard in Resources */,
+				D53C121F1940AE61000D9234 /* Helicopter.mp3 in Resources */,
 				D5397E541940559600B53459 /* ObstBot.png in Resources */,
 				D5397E4D1940559600B53459 /* HeliCrash.png in Resources */,
 			);

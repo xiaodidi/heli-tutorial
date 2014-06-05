@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 VT. All rights reserved.
 //
 
+#import <AudioToolbox/AudioToolbox.h>
 #import "VTViewController.h"
 
 @interface VTViewController ()
@@ -26,6 +27,10 @@
     CGPoint startPos;
     
     long highScore;
+    
+    AVAudioPlayer *audioPlayer;
+    
+    SystemSoundID soundCrash, soundObstacle;
 }
 
 @end
@@ -65,6 +70,10 @@
 {
     _heli.image = [UIImage imageNamed:@"HeliCrash.png"];
     [timer invalidate];
+    [audioPlayer stop];
+    
+    AudioServicesPlaySystemSound(soundCrash);
+
     isEnd = YES;
     
     highScore = score > highScore ? score : highScore;
@@ -87,6 +96,17 @@
     staticObstacles = [NSArray arrayWithArray:[self.view subviews]];
     staticObstacles = [staticObstacles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"tag == %d", 88]];
     allObstacles = [staticObstacles arrayByAddingObjectsFromArray:movingObstacles];
+    
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"Helicopter" ofType:@"mp3"];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+    
+    path = [[NSBundle mainBundle]pathForResource:@"Crash" ofType:@"mp3"];
+    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain([NSURL fileURLWithPath: path]), &soundCrash);
+
+    path = [[NSBundle mainBundle]pathForResource:@"Clink" ofType:@"mp3"];
+    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain([NSURL fileURLWithPath: path]), &soundObstacle);
+    
+    audioPlayer.delegate = self;
     
     [self newGame];
 }
@@ -152,6 +172,8 @@
         
         [self toggelObstWithBool:NO];
         
+        [audioPlayer play];
+
         isStart = NO;
     }
     if(isEnd) { return; }
@@ -176,6 +198,7 @@
         ramdomPos += 110;
         if( o.center.x < 0) {
             self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld", (long)++score];
+            AudioServicesPlaySystemSound(soundObstacle);
         }
         o.center = CGPointMake(x, ramdomPos);
     }
@@ -201,6 +224,14 @@
 -(void)moveObstacle:(UIView*)o
 {
     o.center = CGPointMake(o.center.x - 10, o.center.y);
+}
+
+#pragma mark - AudioPlayer
+
+-(void)audioPlayerDidFinishPlaying:
+(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    [player play];
 }
 
 @end

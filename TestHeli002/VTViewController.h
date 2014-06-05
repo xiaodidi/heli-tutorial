@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface VTViewController : UIViewController
+@interface VTViewController : UIViewController <AVAudioPlayerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *heli;
 
