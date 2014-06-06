@@ -117,6 +117,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - screen orientations
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return toInterfaceOrientation == UIInterfaceOrientationLandscapeRight ||
+    toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft;
+}
+
 #pragma mark - Helicopter
 
 -(void)heliMove
