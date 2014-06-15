@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D5397DFE1940550900B53459"
-               BuildableName = "TestHeli002.app"
+               BuildableName = "Helicopter.app"
                BlueprintName = "TestHeli002"
                ReferencedContainer = "container:TestHeli002.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5397DFE1940550900B53459"
-            BuildableName = "TestHeli002.app"
+            BuildableName = "Helicopter.app"
             BlueprintName = "TestHeli002"
             ReferencedContainer = "container:TestHeli002.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5397DFE1940550900B53459"
-            BuildableName = "TestHeli002.app"
+            BuildableName = "Helicopter.app"
             BlueprintName = "TestHeli002"
             ReferencedContainer = "container:TestHeli002.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5397DFE1940550900B53459"
-            BuildableName = "TestHeli002.app"
+            BuildableName = "Helicopter.app"
             BlueprintName = "TestHeli002"
             ReferencedContainer = "container:TestHeli002.xcodeproj">
          </BuildableReference>
